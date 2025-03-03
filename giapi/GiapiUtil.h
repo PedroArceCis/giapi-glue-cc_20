@@ -11,7 +11,6 @@
 #include <giapi/GiapiErrorHandler.h>
 
 #include <stdexcept>
-//Required for exception handling
 
 namespace giapi {
 
