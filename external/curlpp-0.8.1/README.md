@@ -10,7 +10,7 @@ pkg-config --cflags --libs libcurl
 
 Execute the cmake.
 ```
-cmake -S ./ -B ./install/ -DCMAKE_INSTALL_PREFIX=$GIAPI_ROOT/external/curlpp -DCMAKE_INSTALL_LIBDIR=lib && cd install
+cmake -S ./ -B ./install/ -DCMAKE_INSTALL_PREFIX=$GIAPI_ROOT/external/curlpp -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_CXX_STANDARD=14 && cd install
 ```
 
 Compile and install the library. 

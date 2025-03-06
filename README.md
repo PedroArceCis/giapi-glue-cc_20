@@ -31,6 +31,15 @@ The following are tools used to build the GIAPI C++ API:
 |GNU automake | 1.16.2   | 1.16.1   |
 |cmake        | 3.26.5 | 3.26.5 |
 
+For this branch the necessaries modifications are made to force all the external libraries
+to the standard C++14.
+This decision was made considering that the "ActiveMQ" library, at the moment, only supports
+at most this version of C++. 
+
+It should be noted that, even so, GIAPI supports the standard of C++20 with all the modifications
+in the build configurations of the externals. Also, all the dockerfiles are using Rocky 9 by default,
+but changing for Rocky 8 it's also works.
+
 # External libraries
 The external libraries required by the GIAPI are:
 * Apache Active MQ CMS (C++ Messaging system) version 3.9.5. [activemq](external/activemq-cpp-library-3.9.5)

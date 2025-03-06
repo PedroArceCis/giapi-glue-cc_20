@@ -1,7 +1,7 @@
 # Configure and Build
 Execute configure to set the environment.
 ```
-./configure --prefix=$GIAPI_ROOT/external/apr
+./configure --prefix=$GIAPI_ROOT/external/apr CXXFLAGS="-std=c++14"
 ```
 Compile and install the library. 
 

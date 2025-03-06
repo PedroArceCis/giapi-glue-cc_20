@@ -9,7 +9,7 @@ mkdir build && cd build
 
 Execute the cmake.
 ```
-cmake ../ -DCMAKE_INSTALL_PREFIX=$GIAPI_ROOT/external/log4cxx -DCMAKE_PREFIX_PATH="$GIAPI_ROOT/external/apr;$GIAPI_ROOT/external/apr-util;$GIAPI_ROOT/external/expat"
+cmake ../ -DCMAKE_INSTALL_PREFIX=$GIAPI_ROOT/external/log4cxx -DCMAKE_PREFIX_PATH="$GIAPI_ROOT/external/apr;$GIAPI_ROOT/external/apr-util;$GIAPI_ROOT/external/expat" -DCMAKE_CXX_STANDARD=14
 ```
 
 Compile and install the library. 

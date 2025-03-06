@@ -5,7 +5,7 @@ autoreconf -fi
 ```
 Next, execute configure to set the environment.
 ```
-./configure --prefix=$GIAPI_ROOT/external/activemq-cpp --with-apr=$GIAPI_ROOT/external/apr --without-openssl
+./configure --prefix=$GIAPI_ROOT/external/activemq-cpp --with-apr=$GIAPI_ROOT/external/apr --without-openssl CXXFLAGS="-std=c++14"
 ```
 Compile and install the library. 
 

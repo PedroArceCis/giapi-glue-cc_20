@@ -5,7 +5,7 @@ First, run the next script that generates the configure script.
 ```
 Now, execute configure to set the environment.
 ```
-./configure --prefix=$GIAPI_ROOT/external/expat
+./configure --prefix=$GIAPI_ROOT/external/expat CXXFLAGS="-std=c++14"
 ```
 Compile and install the library. 
 
